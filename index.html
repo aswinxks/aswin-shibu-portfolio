@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aswin Shibu | Polymath, Systems Engineer & Researcher</title>
+    <meta name="description" content="Portfolio of Aswin Shibu - Founder of HyperSense India & Master Industries. Expert in Systems Optimization, Health Research, and Theoretical Astrophysics.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+    <div class="cursor-glow" id="cursor-glow"></div>
+    <div class="noise-overlay"></div>
+
+    <!-- Experience Overlay -->
+    <div id="experience-overlay" class="overlay">
+        <div class="overlay-content terminal-style">
+            <div class="terminal-header">
+                <i data-lucide="terminal"></i>
+                <span>SYSTEM_INITIALIZATION</span>
+            </div>
+            <div class="terminal-body" style="text-align: left; margin: 2rem 0; font-family: monospace; font-size: 0.9rem; color: var(--cyan);">
+                <p>> INITIATING SECURE HANDSHAKE...</p>
+                <p>> UPLINK ESTABLISHED.</p>
+                <p>> NODE IP: <span id="user-ip" style="color: var(--accent);">DETECTING...</span></p>
+                <p>> LOCATION: <span id="user-location" style="color: var(--accent);">DETECTING...</span></p>
+                <p>> AWAITING USER ACTIVATION...</p>
+            </div>
+            <button id="activate-btn" class="btn-primary" style="margin-top: 1rem; width: 100%;">Enter Experience</button>
+        </div>
+    </div>
+
+    <!-- Background Music -->
+    <audio id="bg-music" loop src="music.mp3"></audio>
+    <div class="music-player" id="music-player">
+        <div class="music-info">
+            <span class="now-playing">System Audio</span>
+            <div class="music-waves">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="music-controls">
+            <button class="music-btn secondary" id="music-play-pause" title="Play/Pause">
+                <i data-lucide="play" id="play-icon"></i>
+            </button>
+            <button class="music-btn" id="music-mute" title="Mute/Unmute">
+                <i data-lucide="volume-2" id="mute-icon"></i>
+            </button>
+            <div class="volume-container">
+                <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="0.05">
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#" class="logo">ASWIN<span>SHIBU</span></a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about">Biography</a></li>
+                <li><a href="#capabilities">Capabilities</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#hypersense">Tech</a></li>
+                <li><a href="#github">Open Source</a></li>
+                <li><a href="#health">Health</a></li>
+                <li><a href="#research">Science</a></li>
+                <li><a href="#contact-btn" class="btn-primary" id="connect-nav-btn">Connect</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <i data-lucide="menu"></i>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero" id="home">
+        <div class="earth-container">
+            <div class="earth-sphere">
+                <div class="earth-surface"></div>
+                <div class="earth-clouds"></div>
+            </div>
+            <div class="earth-atmosphere"></div>
+            <div class="earth-glow"></div>
+        </div>
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="hero-badge" data-reveal>
+                        <span class="pulse"></span>
+                        Adaptive Professional | Author | Independent Researcher | Strategy Expert
+                    </div>
+                    <h1 data-reveal>Aswin <span>Shibu</span></h1>
+                    <p class="hero-subtext" data-reveal>
+                        <strong>Multidisciplinary Professional & Versatile Specialist</strong><br>
+                        Cross-Functional Expert pushing the boundaries of technology and human optimization.
+                    </p>
+                    <div class="hero-btns" data-reveal>
+                        <a href="#hypersense" class="btn-primary">Tech Portfolio</a>
+                        <a href="#resume" class="btn-outline">View Resume</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visuals">
+            <div class="orb"></div>
+            <div class="orb-glow"></div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+            <span>Scroll to Explore</span>
+        </div>
+    </header>
+
+    <section id="about" class="biography section">
+        <div class="container">
+            <div class="section-header center" data-reveal>
+                <span class="section-tag">Biography</span>
+                <h2>The <span>Full Story</span></h2>
+            </div>
+            
+            <div class="bio-chapters">
+                <!-- Chapter 1: Roots -->
+                <div class="bio-chapter" data-reveal>
+                    <div class="chapter-num">01</div>
+                    <div class="chapter-content">
+                        <h3>Roots & Foundations</h3>
+                        <p>Born on September 12, 2001, in Angamaly, Kerala, Aswin Shibu’s journey began with a curiosity that spanned multiple fields. He attended St. Francis Assisi Public School in Athani for his primary education, later pursuing high school at Holy Family High School and NSS HSS School in Parakadav.</p>
+                    </div>
+                </div>
+
+                <!-- Chapter 2: The Pivot -->
+                <div class="bio-chapter" data-reveal>
+                    <div class="chapter-num">02</div>
+                    <div class="chapter-content">
+                        <h3>The Entrepreneurial Pivot</h3>
+                        <p>While originally enrolled in Sree Sankara College to study Tourism and Hospitality, Aswin’s love for innovation and independent creation led him to a bold decision. He chose to drop out and forge his own path. In 2020, at just 19 years old, he founded <strong>Master Industries</strong>, providing high-quality products and services through dedication and a visionary mindset.</p>
+                    </div>
+                </div>
+
+                <!-- Chapter 3: The Polymath -->
+                <div class="bio-chapter" data-reveal>
+                    <div class="chapter-num">03</div>
+                    <div class="chapter-content">
+                        <h3>Psychology meets Technology</h3>
+                        <p>Aswin, often known as <strong>"Master"</strong> or <strong>"Aswin Trybz"</strong>, is recognized for his unique expertise at the intersection of psychology and technology. He delves deep into understanding the human psyche and how the digital world impacts human behavior. As a coach and consultant, he has guided many towards overcoming obstacles and achieving their high-performance goals.</p>
+                    </div>
+                </div>
+
+                <!-- Chapter 4: Philosophy -->
+                <div class="bio-chapter" data-reveal>
+                    <div class="chapter-num">04</div>
+                    <div class="chapter-content">
+                        <h3>Lifestyle & Philosophy</h3>
+                        <p>A strong advocate for ethical technology and conscious living, Aswin follows a vegetarian lifestyle—his favorite being paneer with chili gobi rice. He is a self-learner with a vast collection of books, studying everything from cybersecurity to astronomy. In his free time, he finds precision and speed in his favorite ride, the <strong>CBR 1000 RR Fireblade</strong>, often reflected in his favorite colors: <strong>Black and Violet</strong>.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bio-summary-footer" data-reveal>
+                <p>Despite his young age, Aswin continues to push the boundaries of excellence, striving to leave a lasting impact on society through research, writing, and systems innovation.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CAPABILITIES & ACHIEVEMENTS -->
+    <section id="capabilities" class="capabilities section bg-offset">
+        <div class="section-bg-animation pulse-animation"></div>
+        <div class="container">
+            <div class="section-header center" data-reveal>
+                <span class="section-tag">Expertise</span>
+                <h2>Core <span>Capabilities</span></h2>
+                <p>A synthesis of technical mastery, management excellence, and human optimization.</p>
+            </div>
+            
+            <div class="capability-grid">
+                <div class="capability-card" data-reveal>
+                    <div class="cap-icon"><i data-lucide="globe"></i></div>
+                    <h3>Internet & IT</h3>
+                    <p>Highly advanced knowledge in internet architecture and computer technology ecosystems.</p>
+                </div>
+                <div class="capability-card" data-reveal>
+                    <div class="cap-icon"><i data-lucide="users"></i></div>
+                    <h3>Work Management</h3>
+                    <p>Expertise in supervising work management flows and team coordination for peak efficiency.</p>
+                </div>
+                <div class="capability-card" data-reveal>
+                    <div class="cap-icon"><i data-lucide="heart-pulse"></i></div>
+                    <h3>Health & Longevity</h3>
+                    <p>Specialist in nutritional protocols and longevity research, optimizing human performance.</p>
+                </div>
+                <div class="capability-card" data-reveal>
+                    <div class="cap-icon"><i data-lucide="briefcase"></i></div>
+                    <h3>HR Management</h3>
+                    <p>Foundational knowledge in Human Resource Management and organizational structure.</p>
+                </div>
+                <div class="capability-card" data-reveal>
+                    <div class="cap-icon"><i data-lucide="shield-check"></i></div>
+                    <h3>Intelligence & Security</h3>
+                    <p>Specialized supervision in intelligence gathering and security infrastructure management.</p>
+                </div>
+                <div class="capability-card" data-reveal>
+                    <div class="cap-icon"><i data-lucide="award"></i></div>
+                    <h3>Key Achievements</h3>
+                    <p>Founder of Master Industries & HyperSense India. Published researcher in metabolic science.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CERTIFICATIONS & ACHIEVEMENTS -->
+    <section id="certifications" class="certifications section bg-offset">
+        <div class="container">
+            <div class="section-header center" data-reveal>
+                <span class="section-tag">Achievements</span>
+                <h2>Professional <span>Certifications</span></h2>
+                <p>Recognized excellence from global institutions and industry leaders.</p>
+            </div>
+            
+            <div class="cert-grid">
+                <!-- 0. NISM Quiz -->
+                <div class="cert-card" data-reveal>
+                    <div class="cert-badge"><i data-lucide="award"></i></div>
+                    <h3>National Financial Literacy Quiz 2026</h3>
+                    <p>Awarded for participating in the Online Round of the National Financial Literacy Quiz 2026, organized by the National Institute of Securities Markets (NISM) and SEBI.</p>
+                </div>
+
+                <!-- 1. Stanford -->
+                <div class="cert-card" data-reveal>
+                    <div class="cert-badge"><i data-lucide="award"></i></div>
+                    <h3>Stanford Introduction to Food and Health</h3>
+                    <p>Represents a commitment to understanding the critical relationship between nutrition and health from a globally recognized institution. It has enhanced my ability to create effective diet plans and provide evidence-based nutritional advice.</p>
+                </div>
+                
+                <!-- 2. ACLS -->
+                <div class="cert-card" data-reveal>
+                    <div class="cert-badge"><i data-lucide="heart"></i></div>
+                    <h3>SaveaLife ACLS Certification-2024</h3>
+                    <p>Demonstrates dedication to saving lives and responding effectively in emergency situations. Proud of the practical skills and knowledge gained to support individuals in critical conditions.</p>
+                </div>
+
+                <!-- 3. ISRO -->
+                <div class="cert-card" data-reveal>
+                    <div class="cert-badge"><i data-lucide="shield"></i></div>
+                    <h3>Geo-data sharing and Cyber Security (ISRO)</h3>
+                    <p>Reflects proficiency in managing and securing geospatial data, crucial for national security and urban planning applications.</p>
+                </div>
+
+                <!-- 4. Data Entry -->
+                <div class="cert-card" data-reveal>
+                    <div class="cert-badge"><i data-lucide="file-text"></i></div>
+                    <h3>Domestic Data Entry Operator (English)</h3>
+                    <p>Showcases attention to detail and efficiency in managing data accurately, essential for data-centric administrative roles.</p>
+                </div>
+
+                <!-- 5. SEO -->
+                <div class="cert-card" data-reveal>
+                    <div class="cert-badge"><i data-lucide="search"></i></div>
+                    <h3>Advanced Search Engine Optimization</h3>
+                    <p>Validates expertise in enhancing online visibility and driving organic traffic, essential for digital success.</p>
+                </div>
+
+                <!-- 6. Instagram -->
+                <div class="cert-card" data-reveal>
+                    <div class="cert-badge"><i data-lucide="instagram"></i></div>
+                    <h3>Instagram Marketing Basics</h3>
+                    <p>Signifies ability to leverage social media platforms for effective marketing and broad audience engagement.</p>
+                </div>
+
+                <!-- 7. Digital Marketing CXO -->
+                <div class="cert-card" data-reveal>
+                    <div class="cert-badge"><i data-lucide="trending-up"></i></div>
+                    <h3>Digital Marketing for CXOs</h3>
+                    <p>Equipped with advanced digital marketing strategies tailored for executive-level decision-makers, contributing to business growth.</p>
+                </div>
+
+                <!-- 8. Agility -->
+                <div class="cert-card" data-reveal>
+                    <div class="cert-badge"><i data-lucide="zap"></i></div>
+                    <h3>Agility</h3>
+                    <p>Demonstrates adaptability and ability to thrive in fast-paced environments, vital for success in today's dynamic workplaces.</p>
+                </div>
+
+                <!-- 9. Google -->
+                <div class="cert-card" data-reveal>
+                    <div class="cert-badge"><i data-lucide="globe"></i></div>
+                    <h3>Fundamentals of Digital Marketing (Google Digital Garage)</h3>
+                    <p>Comprehensive understanding of digital marketing principles from a leading tech company, enhancing ability to create impactful campaigns.</p>
+                </div>
+
+                <!-- 10. AI Appreciate -->
+                <div class="cert-card" data-reveal>
+                    <div class="cert-badge"><i data-lucide="cpu"></i></div>
+                    <h3>AI Appreciate Certificate</h3>
+                    <p>Reflects awareness and appreciation of artificial intelligence technologies and their applications in various fields.</p>
+                </div>
+
+                <!-- 11. AI Aware -->
+                <div class="cert-card" data-reveal>
+                    <div class="cert-badge"><i data-lucide="eye"></i></div>
+                    <h3>AI Aware Certificate</h3>
+                    <p>Signifies understanding of AI's ethical implications and potential, ensuring stay informed about cutting-edge technologies.</p>
+                </div>
+
+                <!-- 12. Housekeeping -->
+                <div class="cert-card" data-reveal>
+                    <div class="cert-badge"><i data-lucide="check-circle"></i></div>
+                    <h3>Housekeeping Attendant (Manual Cleaning)</h3>
+                    <p>Highlights commitment to maintaining cleanliness and hygiene, fundamental for creating a safe and welcoming environment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RESUME SECTION -->
+    <section id="resume" class="resume section">
+        <div class="container">
+            <div class="section-header center" data-reveal>
+                <span class="section-tag">Credentials</span>
+                <h2>Professional <span>Resume</span></h2>
+                <p>Read or download my detailed professional background and technical expertise.</p>
+            </div>
+            
+            <div class="resume-container" data-reveal>
+                <div class="resume-preview">
+                    <iframe src="AswinShibuResume.pdf#toolbar=0" width="100%" height="800px"></iframe>
+                </div>
+                <div class="resume-actions">
+                    <a href="AswinShibuResume.pdf" download class="btn-primary">
+                        <i data-lucide="download"></i> Download PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HYPERSENSE INDIA -->
+    <section id="hypersense" class="tech section bg-offset">
+        <div class="section-bg-animation">
+            <canvas id="binary-canvas"></canvas>
+        </div>
+        <div class="container">
+            <div class="side-header" data-reveal>
+                <span class="section-tag">Engineering</span>
+                <h2>HyperSense <span>India</span></h2>
+                <p>Advanced tech initiative focused on performance tuning and system architecture.</p>
+                <a href="https://github.com/hypersenseindia" target="_blank" class="btn-outline sm-btn"><i data-lucide="github"></i> Repository Lab</a>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card large" data-reveal>
+                    <div class="project-img-placeholder">
+                        <i data-lucide="smartphone"></i>
+                        <span>HyperPhone Gen-8</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>HyperPhone Gen-8</h3>
+                        <p>A futuristic flagship concept featuring a 4K+ AMOLED display, 200MP periscope camera system, and hardware-level optimization for extreme efficiency.</p>
+                        <ul class="project-tags">
+                            <li>Hardware Architecture</li>
+                            <li>UX Engineering</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-card" data-reveal>
+                    <div class="project-icon"><i data-lucide="cpu"></i></div>
+                    <h3>HSX-SAE Framework</h3>
+                    <p>HyperShield-X Secure Activation Engine: A proprietary framework for secure system-level modular control and activation.</p>
+                </div>
+
+                <div class="project-card" data-reveal>
+                    <div class="project-icon"><i data-lucide="mouse-pointer"></i></div>
+                    <h3>Touch Enhancement</h3>
+                    <p>Custom input optimization system improving responsiveness for competitive mobile gaming.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GITHUB PROJECTS EVALUATION -->
+    <section id="github" class="github section">
+        <div class="container">
+            <div class="section-header center" data-reveal>
+                <span class="section-tag">Open Source Spotlight</span>
+                <h2>Engineering <span>on GitHub</span></h2>
+                <p>A collection of high-performance tools and scripts developed under the HyperSense India brand.</p>
+            </div>
+            
+            <div class="gh-grid">
+                <div class="gh-card" data-reveal>
+                    <div class="gh-header">
+                        <i data-lucide="code-2"></i>
+                        <span class="gh-badge">NeuralCore</span>
+                    </div>
+                    <h3>Hypersense-Android-V2</h3>
+                    <p>Advanced offline performance optimizer for Android via Termux. Enhances FPS, touch sensitivity, and VRAM management.</p>
+                </div>
+                <div class="gh-card" data-reveal>
+                    <div class="gh-header">
+                        <i data-lucide="zap"></i>
+                        <span class="gh-badge">Non-Root</span>
+                    </div>
+                    <h3>Hypersense-Ultimate</h3>
+                    <p>Performance script for Free Fire, PES, and more. Focuses on network stability and metabolic battery management.</p>
+                </div>
+                <div class="gh-card" data-reveal>
+                    <div class="gh-header">
+                        <i data-lucide="terminal"></i>
+                        <span class="gh-badge">OSINT</span>
+                    </div>
+                    <h3>HYPERINFO</h3>
+                    <p>Bash-based Open Source Intelligence tool designed for specialized data gathering and system analysis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RESEARCH & SCIENCE -->
+    <section id="research" class="science section bg-violet-dark">
+        <div class="section-bg-animation anatomy-animation"></div>
+        <div class="container">
+            <div class="section-header center" data-reveal>
+                <span class="section-tag">Academic Presence</span>
+                <h2>Published <span>Papers</span></h2>
+                <p>Active contributor on Academia.edu focusing on nutrition, metabolism, and public health.</p>
+            </div>
+            
+            <div class="papers-grid" data-reveal>
+                <div class="paper-card">
+                    <span class="paper-num">01</span>
+                    <h3>Nutritional Strategies for Mental Health</h3>
+                    <p>Researching the impact of diet on mood and cognition through evidence-based patterns.</p>
+                </div>
+                <div class="paper-card">
+                    <span class="paper-num">02</span>
+                    <h3>Metabolism Unleashed (2024)</h3>
+                    <p>Advanced approaches to weight loss and metabolic optimization strategies.</p>
+                </div>
+                <div class="paper-card">
+                    <span class="paper-num">03</span>
+                    <h3>Tobacco Smoking Analysis</h3>
+                    <p>Public health awareness focusing on the balanced analysis of smoking effects.</p>
+                </div>
+            </div>
+
+            <div class="kali-feature" data-reveal style="margin-top: 6rem;">
+                <div class="section-bg-animation black-hole-animation"></div>
+                <div class="kali-content">
+                    <i data-lucide="star" class="star-icon"></i>
+                    <h3>Theoretical Research (Kali Concept)</h3>
+                    <p>Developed an original theoretical framework exploring the concept of an ultra-massive black hole system, termed “Kali,” hypothesized to be vastly larger than conventional cosmic structures. The theory proposes that such an entity could contain multiple universes within it, redefining scale, gravity interaction, and energy distribution at extreme levels.</p>
+                    <p style="margin-top: 1rem;">The model explores the idea that existence within such a system may operate at a quantum-relative scale, where immense gravitational forces become locally negligible, enabling stable environments influenced by high-energy fields. This work attempts to bridge modern astrophysical thinking with interpretations of ancient philosophical concepts, offering a multidisciplinary perspective on cosmology, space-time structure, and universal hierarchy.</p>
+                    
+                    <div class="kali-focus" style="margin-top: 2rem;">
+                        <h4 style="color: var(--accent); margin-bottom: 1.5rem;">Key Focus Areas:</h4>
+                        <ul style="list-style: none; display: grid; gap: 1rem;">
+                            <li style="display: flex; gap: 1rem; align-items: flex-start;">
+                                <i data-lucide="circle-dot" style="width: 1.2rem; height: 1.2rem; color: var(--accent); flex-shrink: 0; margin-top: 0.2rem;"></i>
+                                <span>Large-scale black hole dynamics and multi-universe containment theory</span>
+                            </li>
+                            <li style="display: flex; gap: 1rem; align-items: flex-start;">
+                                <i data-lucide="circle-dot" style="width: 1.2rem; height: 1.2rem; color: var(--accent); flex-shrink: 0; margin-top: 0.2rem;"></i>
+                                <span>Quantum-scale existence within extreme gravitational systems</span>
+                            </li>
+                            <li style="display: flex; gap: 1rem; align-items: flex-start;">
+                                <i data-lucide="circle-dot" style="width: 1.2rem; height: 1.2rem; color: var(--accent); flex-shrink: 0; margin-top: 0.2rem;"></i>
+                                <span>Energy field influence on matter and life within high-density cosmic environments</span>
+                            </li>
+                            <li style="display: flex; gap: 1rem; align-items: flex-start;">
+                                <i data-lucide="circle-dot" style="width: 1.2rem; height: 1.2rem; color: var(--accent); flex-shrink: 0; margin-top: 0.2rem;"></i>
+                                <span>Comparative analysis between theoretical physics and ancient knowledge systems</span>
+                            </li>
+                            <li style="display: flex; gap: 1rem; align-items: flex-start;">
+                                <i data-lucide="circle-dot" style="width: 1.2rem; height: 1.2rem; color: var(--accent); flex-shrink: 0; margin-top: 0.2rem;"></i>
+                                <span>Conceptual modeling of universe-within-structure frameworks</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="footer">
+        <!-- System Dashboard Overlay -->
+        <div class="system-dashboard" data-reveal>
+            <div class="dashboard-header">
+                <div class="dash-title">
+                    <i data-lucide="terminal"></i>
+                    <span>SYSTEM_DIAG_V2.0_AUDIT</span>
+                </div>
+                <button id="open-audit-btn" class="btn-audit-mini">OPEN FULL AUDIT NODE</button>
+            </div>
+            <div class="dashboard-grid">
+                <div class="dash-item">
+                    <span class="label">NODE_IP:</span>
+                    <span id="dash-ip" class="matrix-text" style="color: var(--cyan);">FETCHING...</span>
+                </div>
+                <div class="dash-item">
+                    <span class="label">UPLINK:</span>
+                    <span id="dash-location" class="matrix-text">LOCATING...</span>
+                </div>
+                <div class="dash-item">
+                    <span class="label">FPS:</span>
+                    <span id="dash-fps" class="matrix-text">--</span>
+                </div>
+                <div class="dash-item">
+                    <span class="label">SEC_CONTEXT:</span>
+                    <span id="dash-threat" class="matrix-text" style="color: var(--accent);">ENCRYPTED</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info" data-reveal>
+                    <h2>Let's <span>Collaborate.</span></h2>
+                    <p>From tech optimization to wellness protocols, let's build something extraordinary.</p>
+                    <button class="btn-primary connect-trigger" style="margin-top: 2rem;">Connect Now</button>
+                    <div class="footer-contact-items">
+                        <a href="mailto:aswinpfi@gmail.com"><i data-lucide="mail"></i> aswinpfi@gmail.com</a>
+                        <a href="tel:+919074502887"><i data-lucide="phone"></i> +91 9074502887</a>
+                    </div>
+                </div>
+                <div class="footer-links" data-reveal>
+                    <h4>Ecosystem</h4>
+                    <div class="social-pills">
+                        <a href="https://github.com/hypersenseindia" target="_blank"><i data-lucide="github"></i> GitHub</a>
+                        <a href="https://notionpress.com/author/883955" target="_blank"><i data-lucide="pen-tool"></i> Author</a>
+                        <a href="https://stanfordmedicine.academia.edu/ASWINSHIBU" target="_blank"><i data-lucide="book-open"></i> Academia</a>
+                        <a href="https://instagram.com/aswinxks" target="_blank"><i data-lucide="instagram"></i> @aswinxks</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Aswin Shibu | Engineered for Excellence</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Total System Auditor Modal -->
+    <div id="audit-modal" class="modal audit-modal-large">
+        <div class="modal-content auditor-content">
+            <button class="close-modal" id="close-audit">&times;</button>
+            <div class="auditor-header">
+                <h2>🛡️ TOTAL SYSTEM <span>AUDITOR</span></h2>
+                <div class="badge-group">
+                    <button id="globalRefreshBtn" class="btn-outline sm-btn">🔄 REFRESH SCAN</button>
+                    <button id="resetFpsBtn" class="btn-outline sm-btn">⏱️ RESET FPS</button>
+                </div>
+            </div>
+            
+            <div class="auditor-scroll-area">
+                <div class="auditor-grid">
+                    <!-- SECTION 1: HARDWARE & OS -->
+                    <div class="audit-card">
+                        <div class="card-header"><i data-lucide="cpu"></i> HARDWARE & SYSTEM</div>
+                        <div class="card-body">
+                            <div class="info-row"><span class="label">DEVICE TYPE</span><span class="value" id="deviceType">...</span></div>
+                            <div class="info-row"><span class="label">OS</span><span class="value" id="osDetail">...</span></div>
+                            <div class="info-row"><span class="label">OS VERSION</span><span class="value" id="osVersion">...</span></div>
+                            <div class="info-row"><span class="label">PLATFORM ARCH</span><span class="value" id="arch">...</span></div>
+                            <div class="info-row"><span class="label">CPU CORES</span><span class="value" id="cpuCores">...</span></div>
+                            <div class="info-row"><span class="label">DEVICE MEMORY</span><span class="value" id="deviceMemory">...</span></div>
+                            <div class="info-row"><span class="label">GPU VENDOR</span><span class="value" id="gpuVendor">...</span></div>
+                            <div class="info-row"><span class="label">GPU MODEL</span><span class="value" id="gpuInfo">...</span></div>
+                        </div>
+                    </div>
+
+                    <!-- SECTION 2: BROWSER & DISPLAY -->
+                    <div class="audit-card">
+                        <div class="card-header"><i data-lucide="layout"></i> BROWSER & DISPLAY</div>
+                        <div class="card-body">
+                            <div class="info-row"><span class="label">BROWSER NAME</span><span class="value" id="browserName">...</span></div>
+                            <div class="info-row"><span class="label">BROWSER VERSION</span><span class="value" id="browserVersion">...</span></div>
+                            <div class="info-row"><span class="label">USER LANGUAGE</span><span class="value" id="userLang">...</span></div>
+                            <div class="info-row"><span class="label">RESOLUTION</span><span class="value" id="screenRes">...</span></div>
+                            <div class="info-row"><span class="label">PIXEL RATIO</span><span class="value" id="pixelRatio">...</span></div>
+                            <div class="info-row"><span class="label">COLOR DEPTH</span><span class="value" id="colorDepth">...</span></div>
+                            <div class="info-row"><span class="label">TOUCH SUPPORT</span><span class="value" id="touchSupport">...</span></div>
+                            <div class="info-row"><span class="label">ORIENTATION</span><span class="value" id="orientation">...</span></div>
+                        </div>
+                    </div>
+
+                    <!-- SECTION 3: NETWORK & IDENTITY -->
+                    <div class="audit-card">
+                        <div class="card-header"><i data-lucide="globe"></i> NETWORK IDENTITY <span id="flagEmoji" style="margin-left:auto;">🌍</span></div>
+                        <div class="card-body">
+                            <div class="info-row"><span class="label">IPv4 ADDRESS</span><span class="value ip-highlight" id="publicIP">...</span></div>
+                            <div class="info-row"><span class="label">IPv6 ADDRESS</span><span class="value" id="publicIPv6">...</span></div>
+                            <div class="info-row"><span class="label">LOCAL IP</span><span class="value" id="localIP">...</span></div>
+                            <div class="info-row"><span class="label">ISP / ORG</span><span class="value" id="ispName">...</span></div>
+                            <div class="info-row"><span class="label">CITY & POSTAL</span><span class="value" id="cityPostal">...</span></div>
+                            <div class="info-row"><span class="label">COUNTRY</span><span class="value" id="ispLocation">...</span></div>
+                            <div class="info-row"><span class="label">COORDINATES</span><span class="value" id="coordinates">...</span></div>
+                            <div class="info-row"><span class="label">AS NUMBER</span><span class="value" id="asNumber">...</span></div>
+                            <div class="info-row"><span class="label">TIMEZONE</span><span class="value" id="timezone">...</span></div>
+                            <div class="info-row"><span class="label">UPLINK TYPE</span><span class="value" id="connectionType">...</span></div>
+                            <div class="info-row"><span class="label">SPEED (Mbps)</span><span class="value" id="downloadSpeed">...</span></div>
+                        </div>
+                    </div>
+
+                    <!-- SECTION 4: PRIVACY & FINGERPRINTING -->
+                    <div class="audit-card">
+                        <div class="card-header"><i data-lucide="shield-alert"></i> PRIVACY AUDIT</div>
+                        <div class="card-body">
+                            <div class="info-row"><span class="label">CANVAS FP</span><span class="value" id="canvasFp">...</span></div>
+                            <div class="info-row"><span class="label">AUDIO FP</span><span class="value" id="audioFp">...</span></div>
+                            <div class="info-row"><span class="label">WEBGL RENDERER</span><span class="value" id="webglRenderer">...</span></div>
+                            <div class="info-row"><span class="label">DNT STATUS</span><span class="value" id="dntValue">...</span></div>
+                            <div class="info-row"><span class="label">COOKIES</span><span class="value" id="cookiesEnabled">...</span></div>
+                            <div class="info-row"><span class="label">CAMERA PERM</span><span class="value" id="cameraPerm">...</span></div>
+                            <div class="info-row"><span class="label">MIC PERM</span><span class="value" id="micPerm">...</span></div>
+                            <div class="info-row"><span class="label">ADBLOCK</span><span class="value" id="adblockDetect">...</span></div>
+                            <div class="info-row"><span class="label">WEBRTC LEAK</span><span class="value" id="webrtcLeakStatus">...</span></div>
+                        </div>
+                    </div>
+
+                    <!-- SECTION 5: SECURITY HEADERS -->
+                    <div class="audit-card">
+                        <div class="card-header"><i data-lucide="lock"></i> SECURITY HEADERS</div>
+                        <div class="card-body">
+                            <div class="info-row"><span class="label">CSP STATUS</span><span class="value" id="cspStatus">...</span></div>
+                            <div class="info-row"><span class="label">HSTS ENABLED</span><span class="value" id="hstsStatus">...</span></div>
+                            <div class="info-row"><span class="label">X-FRAME-OPTIONS</span><span class="value" id="xFrameStatus">...</span></div>
+                            <div class="info-row"><span class="label">BATTERY LEVEL</span><span class="value" id="batteryInfo">...</span></div>
+                            <div class="info-row"><span class="label">CHARGING</span><span class="value" id="chargingStatus">...</span></div>
+                        </div>
+                    </div>
+
+                    <!-- PERFORMANCE METER -->
+                    <div class="audit-card fps-special">
+                        <div class="card-header"><i data-lucide="zap"></i> PERFORMANCE METER</div>
+                        <div class="card-body">
+                            <div class="fps-gauge">
+                                <span id="fpsNumber" class="fps-val">--</span>
+                                <span class="label">LIVE FPS</span>
+                            </div>
+                            <div class="performance-bar"><div class="bar-fill" id="fpsBar"></div></div>
+                            <canvas id="fpsCanvas" height="60"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="auditor-footer">
+                <p>TELEMETRY_PACKET_V2_LOGGED_TO_SECURE_DATABASE. ALL 42 PARAMETERS ANALYZED.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Connect Modal -->
+    <div id="connect-modal" class="modal">
+        <div class="modal-content">
+            <button class="close-modal" id="close-modal">&times;</button>
+            <h3>Connect with <span>Aswin</span></h3>
+            <p>Choose your preferred platform to reach out.</p>
+            <div class="modal-btns">
+                <a href="https://wa.me/919074502887" target="_blank" class="modal-btn whatsapp">
+                    <i data-lucide="message-circle"></i> WhatsApp
+                </a>
+                <a href="https://instagram.com/aswinxks" target="_blank" class="modal-btn instagram">
+                    <i data-lucide="instagram"></i> Instagram
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
